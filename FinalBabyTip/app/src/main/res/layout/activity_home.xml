@@ -1,0 +1,110 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_blanco"
+    >
+    <android.support.v4.widget.NestedScrollView
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_layout"
+        android:padding="20dp"
+        >
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/bebe"
+            android:id="@+id/img_foto"
+            android:onClick="ViewProfile"
+            />
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sp_seleccionar"
+            android:layout_column="0"
+            android:layout_weight="1"
+            android:layout_toRightOf="@id/img_foto"
+            android:layout_marginTop="20dp"
+
+            />
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_foto"
+                >
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_column="0"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/test"
+                        android:src="@drawable/boton_test"
+                        android:layout_weight="1"
+                        android:layout_marginRight="15dp" />
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_column="1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:id="@+id/guia"
+                        android:src="@drawable/boton_guia" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_column="0"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/tips"
+                        android:src="@drawable/boton_tips"
+                        android:layout_weight="1"
+                        android:layout_marginRight="15dp" />
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_column="1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:id="@+id/graficas"
+                        android:src="@drawable/boton_graficas" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_column="0"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/descargas"
+                        android:src="@drawable/boton_descargas"
+                        android:layout_marginRight="15dp" />
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/btn_agregar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:src="@drawable/add"
+                        android:onClick="nuevoBebe"
+                        />
+                </TableRow>
+            </TableLayout>
+
+    </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
